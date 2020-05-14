@@ -12,8 +12,7 @@ module Memorable
   
   module InstanceMethods
     def initialize
-      @@artists << self
-      @songs = []
+      self.class.all << self
     end
   end
 end
